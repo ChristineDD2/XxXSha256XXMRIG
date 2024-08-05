@@ -1,6 +1,10 @@
 cmake_minimum_required(VERSION 3.5)
 project(xmrig)
 
+set(CRYPTO_SOURCES ${CRYPTO_SOURCES}
+    sha256.cpp
+)
+
 option(WITH_HWLOC           "Enable hwloc support" ON)
 option(WITH_CN_LITE         "Enable CryptoNight-Lite algorithms family" ON)
 option(WITH_CN_HEAVY        "Enable CryptoNight-Heavy algorithms family" ON)
